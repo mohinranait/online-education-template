@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <!-- Swiper Slider  -->
+    <link rel="stylesheet" href="./plugins/swiper-slider/swiper.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-white font-textFont">
+
+    <header class="bg-white py-3 relative shadow">
+        <div>
+            <div class="
+                container 
+                flex 
+                items-center 
+                justify-between 
+                ">
+                <a href="#">
+                    <img src="./images/logo.svg" alt="">
+                </a>
+                <ul id="navBar" class=" z-50 absolute  bg-gray-200  w-10/12 sm:w-8/12  left-0   h-screen bottom-0 top-0  hidden lg:flex lg:h-auto lg:items-center lg:static lg:justify-center lg:bg-transparent lg:w-fit ">
+                    <div class=" shadow flex items-center space-x-3 p-6 lg:hidden ">
+                        <a href="#">Log in</a>
+                        <a href="#">Sign Up</a>
+                    </div>
+                    <li>
+                        <a class=" w-full block py-2 hover:bg-gray-100 px-6 lg:hover:bg-transparent  " href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class=" w-full block py-2 hover:bg-gray-100 px-6 lg:hover:bg-transparent  " href="#">About</a>
+                    </li>
+                    <li class=" relative group">
+                        <a class=" w-full  py-2 hover:bg-gray-100 px-6 lg:hover:bg-transparent flex items-center justify-between  " href="#">
+                            <span>Pages</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 subMenuIcon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+                        <ul class="hidden lg:absolute lg:top-full lg:left-0 lg:bg-white lg:py-1 lg:w-52 lg:shadow lg:divide-y lg:divide-gray-100 lg:group-hover:block">
+                            <li><a href="#" class="px-6 py-2 w-full block hover:bg-gray-300 lg:py-2">Dashboard</a></li>
+                            <li><a href="#" class="px-6 py-2 w-full block hover:bg-gray-300 lg:py-2">Login</a></li>
+                            <li><a href="#" class="px-6 py-2 w-full block hover:bg-gray-300 lg:py-2">Register</a></li>
+                            <li><a href="#" class="px-6 py-2 w-full block hover:bg-gray-300 lg:py-2">All Courses</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class=" relative group">
+                        <a class=" w-full  py-2 hover:bg-gray-100 px-6 lg:hover:bg-transparent flex items-center justify-between  " href="#">
+                            <span>Events</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 subMenuIcon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                            </svg>
+                        </a>
+                        <ul class="hidden lg:absolute lg:top-full lg:left-0 lg:bg-white lg:py-1 lg:w-52 lg:shadow lg:divide-y lg:divide-gray-100 lg:group-hover:block">
+                            <li><a href="#" class="px-6 py-2 w-full block hover:bg-gray-300 lg:py-2">Event one</a></li>
+                            <li><a href="#" class="px-6 py-2 w-full block hover:bg-gray-300 lg:py-2">Event Two</a></li>
+                            <li><a href="#" class="px-6 py-2 w-full block hover:bg-gray-300 lg:py-2">Event Three</a></li>
+                            <li><a href="#" class="px-6 py-2 w-full block hover:bg-gray-300 lg:py-2">Event Four</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li>
+                        <a class=" w-full block py-2 hover:bg-gray-100 px-6 lg:hover:bg-transparent  " href="#">Blogs</a>
+                    </li>
+                    
+                </ul>
+                
+                <ul class="flex items-center justify-end space-x-5">
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="lg:hidden">
+                        <button id="toggleIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="hidden sm:block">
+                        <a href="#" class="btn ring-red-500 bg-primaryColor text-white text-sm hover:bg-red-500">Free Join</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+
+
+     <!-- Hero Section -->
+     <section>
+        <div class="bg-cover bg-no-repeat bg-center" style="background-image: url('./images/slider/Banner-home-01.jpg');">
+            <div class="container h-screen flex items-center ">
+                <div class="space-y-5 md:w-8/12 lg:w-6/12">
+                    <h1 class="uppercase text-white font-semibold text-base">UPGRADE YOUR LIFE WITH</h1>
+                    <h2 class="text-5xl font-bold text-white leading-tight">Live Classes For Professional Courses</h2>
+                    <p class="text-sm text-white font-semibold">EduSphere consulting offers your loved ones</p>
+                    <div class="">
+                        <a href="#" class="py-3 px-10 inline-block bg-red-600 text-white font-semibold">Know More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="py-12 ">
+        <div class="container space-y-4 md:w-8/12 lg:w-6/12 md:mx-auto">
+            <p class="uppercase text-sm font-bold text-red-700 md:text-center ">Course Category</p>
+            <h2 class="text-gray-900 font-bold text-4xl md:text-center">Explore What Do You Want</h2>
+            <p class="text-sm text-gray-700 md:text-center">Teaching students to work diligently & hard through higher education advice on premier colleges or universities.</p>
+        </div>
+        <div class="container">
+            <div class="swiper courseCategory">
+                <div class="swiper-wrapper ">
+                    
+                    <div class="swiper-slide h-72  flex items-center bg-center bg-no-repeat bg-cover before:w-full before:h-full before:absolute before:bg-slate-900 before:opacity-80 before:left-0 before:right-0 before:z-0" style="background-image: url('./images/course/thumb-3.jpg');">
+                        <div class="container z-10">
+                            <div class=" ">
+                                <h4 class="text-center text-2xl text-white font-bold  ">Connect With Our Expert And Start Learning Today</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide h-72  flex items-center bg-center bg-no-repeat bg-cover before:w-full before:h-full before:absolute before:bg-slate-900 before:opacity-80 before:left-0 before:right-0 before:z-0" style="background-image: url('./images/course/thumb-3.jpg');">
+                        <div class="container z-10">
+                            <div class=" ">
+                                <h4 class="text-center text-2xl text-white font-bold  ">Connect With Our Expert And Start Learning Today</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide h-72  flex items-center bg-center bg-no-repeat bg-cover before:w-full before:h-full before:absolute before:bg-slate-900 before:opacity-80 before:left-0 before:right-0 before:z-0" style="background-image: url('./images/course/thumb-3.jpg');">
+                        <div class="container z-10">
+                            <div class=" ">
+                                <h4 class="text-center text-2xl text-white font-bold  ">Connect With Our Expert And Start Learning Today</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide h-72  flex items-center bg-center bg-no-repeat bg-cover before:w-full before:h-full before:absolute before:bg-slate-900 before:opacity-80 before:left-0 before:right-0 before:z-0" style="background-image: url('./images/course/thumb-3.jpg');">
+                        <div class="container z-10">
+                            <div class=" ">
+                                <h4 class="text-center text-2xl text-white font-bold  ">Connect With Our Expert And Start Learning Today</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide h-72  flex items-center bg-center bg-no-repeat bg-cover before:w-full before:h-full before:absolute before:bg-slate-900 before:opacity-80 before:left-0 before:right-0 before:z-0" style="background-image: url('./images/course/thumb-3.jpg');">
+                        <div class="container z-10">
+                            <div class=" ">
+                                <h4 class="text-center text-2xl text-white font-bold  ">Connect With Our Expert And Start Learning Today</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/swiper-slider/swiper.min.js"></script>
+    <script src="./plugins/swiper-slider/swiper-slider.js"></script>
+    <script src="./js/index.js"></script>
+    
+
+</body>
+</html>

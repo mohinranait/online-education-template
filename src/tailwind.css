@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    
+    .btn{
+        @apply px-4 py-2 lg:py-3 lg:px-5 rounded-md   transition focus:ring-2 ring-offset-1 
+    };
+    
+}
+
+.swiper-pagination-bullet {
+    @apply w-5 bg-gray-400 rounded opacity-30 cursor-pointer
+}
+.swiper-pagination-bullet-active {
+    @apply w-5 bg-white rounded rounded opacity-100
+}
+
+
